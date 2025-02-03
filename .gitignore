@@ -1,0 +1,19 @@
+# environment
+.env
+*.env.local
+
+# dependencies
+node_modules/
+dist/
+
+# logs
+logs/
+*.log
+npm-debug.log*
+
+# editor
+.cursorrules
+.cursorignore
+
+# OS
+.**/.DS_Store
