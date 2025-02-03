@@ -1,9 +1,11 @@
 {
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project tsconfig.json",
+    "prestart": "npm run build",
     "start": "node dist/index.js",
     "start:dev": "ts-node-dev src/index.ts",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "discord.js": "^14.17.3",
